@@ -1,0 +1,416 @@
+:root {
+  --main-color: #212121; /* TEXT */
+  --secondary-color: #2196f3; /* LOGO */
+  --third-color: #ffffff; /* NAVI */
+  --fourth-color: #757575; /* LOREM MINI */
+  --header-bg-color: #2F303A; /* BACKGROUN HERO */
+  --header-line: #ececec; /* LINIA NAGŁÓWEK */
+  --logo-color: #000000; /* LOGO COLOR */
+  --filters-btn-bg: #f5f4fa; /* BTN FILTERS */
+  --footer-contacts: rgba(255, 255, 255, 0.6); /* KONTAKTY STOPKA */
+  --cards-border-color: #eeeeee; /* BORDER CARDS */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-color);
+  /* background-color: orange; */
+ 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* border-width: 1px;
+  border-style: solid;
+  border-color: red; */
+}
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+
+/* BTN */
+.modal-btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 41px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--third-color);
+  background-color: var(--secondary-color);
+  border-style: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* NAGŁOWEK H2 (czym się zajmujemy i nasz zespół) */
+.secondary-header {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em; 
+}
+
+/* NAGŁOWEK H3 (John Doe) */
+.third-header {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* HEADER | NAGŁÓWEK -Main Page */
+
+.header {
+  border-bottom: 1px solid var(--header-line);
+}
+
+.header .container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 93px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+}
+
+.logo-footer {
+  color: var(--third-color);
+}
+
+.span-logo {
+  color: var(--secondary-color);
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 46px;
+}
+
+.navigation-link,
+.header-email,
+.header-phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+
+.navigation-link {
+  color: var(--main-color);
+}
+
+.header-phone,
+.header-email {
+  display: flex;
+  color: var(--fourth-color);
+}
+
+.header-email {
+  margin-left: auto;
+}
+
+.header-phone {
+  margin-left: 50px;
+}
+
+.navigation-link:hover,
+.header-email:hover,
+.header-phone:hover,
+.navigation-link:focus,
+.header-email:focus,
+.header-phone:focus {
+  color: var(--secondary-color);
+}
+
+/* END HEADER | KONIEC NAGŁÓWEK -Main Page */
+
+/* SEKCJA HERO -Main Page */
+
+.welcome {
+  display: flex;
+  background-color: var(--header-bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.welcome .main-header {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.main-header {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--third-color);
+}
+
+/* END HERO -Main Page */
+
+/* SEKCJA LOREM | ADVANTAGES -Main Page */
+
+.advantages-list {
+  display: flex;
+  align-items: center;
+}
+
+.advantages {
+  padding-bottom: 0;
+}
+
+.advantages-list-item {
+  width: 270px;
+}
+
+.advantages-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages-text {
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--fourth-color);
+}
+
+/* END SEKCJA LOREM | ADVANTAGES -Main Page */
+
+/* SERVICES | WHAT WE DO | CZYM SIĘ ZAJMUJEMY -Main Page */
+
+.services {
+
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* END SERVICES | WHAT WE DO | CZYM SIĘ ZAJMUJEMY -Main Page */
+
+/* OUR TEAM | NASZ ZESPÓŁ -Main Page */
+
+.team {
+  background-color: var(--filters-btn-bg);
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-job-title {
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--fourth-color);
+}
+
+.team-card-wrapper {
+  padding: 30px 61px;
+}
+
+/* END OUR TEAM | NASZ ZESPÓŁ -Main Page */
+
+/* FILTERS -Portfolio */
+.projects-filters {
+  padding-bottom: 0;
+  margin-bottom: 34px;
+}
+
+.project-filters-list {
+  display: flex;
+  justify-content: center;
+}
+
+.project-filters-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.project-filters-btn {
+  padding: 6px 22px;
+  background: var(--filters-btn-bg);
+  border-style: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.project-filters-btn:hover,
+.project-filters-btn:focus {
+  background-color: var(--secondary-color);
+  color: var(--third-color);
+}
+
+/* END FILTERS -Portfolio */
+
+/* PROJECTS -Portfolio */
+.projects {
+  padding-top: 0;
+}
+
+.project-cards-wrapper {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--cards-border-color);
+  border-right: 1px solid var(--cards-border-color);
+  border-left: 1px solid var(--cards-border-color);
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-top: -30px;
+}
+
+.projects-card {
+  margin-right: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.projects-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects-category {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--fourth-color);
+}
+
+/* END PROJECTS -Portfolio*/
+
+
+/* FOOTER | STOPKA */
+
+.footer {
+  background-color: var(--header-bg-color);
+}
+
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address-list {
+  display: block;
+  margin-top: 20px;
+}
+
+.footer-address,
+.footer-email,
+.footer-phone {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.footer-address:hover,
+.footer-email:hover,
+.footer-phone:hover,
+.footer-address:focus,
+.footer-email:focus,
+.footer-phone:focus {
+  color: var(--secondary-color);
+}
+
+.footer-address {
+  color: var(--third-color);
+}
+
+.footer-email,
+.footer-phone {
+  color: var(--footer-contacts);
+}
+/* -Portfolio */
+
+.footer-email-portfolio {
+  text-decoration-line: underline;
+}
+
+/* END FOOTER */
